@@ -1,12 +1,19 @@
-// Цвета
-:root {
-}
+//
+$color-accent: rgb(10, 217, 198);
+$color-accent-hover: rgb(0, 255, 228);
+$color-black-light: #48494D;
+$color-black: rgb(0, 0, 0);
+$color-white: rgb(255, 255, 255);
+$color-white-a20: rgba(255, 255, 255, 0.2);
+$color-grey-lighten: #f6f6f6;
 
 // Размеры вьюпорта
 $mobile-width: 767.8px;
 $tablet-width: 1023.8px;
 $desktop-width: 1024px;
-$container-desktop-width: 1210px;
+
+$container-desktop-width: 1236px;
+$container-header-width: 994px;
 
 // Шрифты
 $main-font: "Open Sans", "Arial", sans-serif;

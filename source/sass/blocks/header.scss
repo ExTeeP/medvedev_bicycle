@@ -1,2 +1,94 @@
 .header {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  padding-top: 21px;
+  z-index: 10;
+
+  @media (max-width: $tablet-width) {
+    padding-top: 25px;
+  }
+}
+
+.header__container {
+  max-width: $container-header-width;
+
+  @media (max-width: $tablet-width) {
+    max-width: $tablet-width;
+  }
+}
+
+.header__row {
+  @media (max-width: $tablet-width) {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.header__logo {
+  display: none;
+
+  @media (max-width: $tablet-width) {
+    display: block;
+  }
+}
+
+.header__burger {
+  display: none;
+
+  @media (max-width: $tablet-width) {
+    display: flex;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 0;
+    right: 0;
+    z-index: 20;
+  }
+}
+
+
+.header__nav {
+  margin-left: auto;
+
+  @media (max-width: $tablet-width) {
+    display: block;
+    position: fixed;
+    height: 100vh;
+    margin: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    text-align: right;
+    overflow-y: scroll;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(100%);
+    transition: all 0s;
+    z-index: 10;
+    background-color: $color-white;
+  }
+}
+
+.header__menu-open {
+  @media (max-width: $tablet-width) {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0);
+    transition: all 0.3s ease-out;
+  }
+}
+
+.nojs .header__nav {
+  @media (max-width: $tablet-width) {
+    display: block;
+    height: auto;
+    position: relative;
+    top: auto;
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0);
+    overflow-y: hidden;
+  }
 }

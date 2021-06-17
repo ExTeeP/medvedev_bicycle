@@ -1,0 +1,58 @@
+.order-form {
+  color: $color-white;
+
+  @media (max-width: $tablet-width) {
+    color: $color-black;
+  }
+}
+
+.order-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.order-form p {
+  margin: 0;
+  margin-top: 5px;
+  margin-bottom: 18px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 28px;
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 30px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 20px;
+  }
+}
+
+.order-form input {
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 0 30px;
+  min-width: 100%;
+  min-height: 48px;
+  font-family: $main-font;
+  font-size: 15px;
+  line-height: 24px;
+  border-radius: 6px;
+  border: 1px solid #C9CCD4;
+  outline: none;
+
+  &:focus {
+    box-shadow: 0 0 0 2px $color-accent;
+  }
+
+  @media (max-width: $tablet-width) {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding-right: 25px;
+    padding-left: 25px;
+  }
+}
