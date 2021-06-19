@@ -30,29 +30,29 @@
 
       <nav class="header__nav menu">
         <ul class="menu__list">
-          <li>
-            <a href="#">О нас
+          <li class="menu__item">
+            <a href="#block-about">О нас
               <svg width="8" height="12" fill="none">
                 <use xlink:href="./img/icon/sprite_auto.svg#icon-arrow"></use>
               </svg>
             </a>
           </li>
-          <li>
-            <a href="#">Виды велосипедов
+          <li class="menu__item">
+            <a href="#block-types">Виды велосипедов
               <svg width="8" height="12" fill="none">
                 <use xlink:href="./img/icon/sprite_auto.svg#icon-arrow"></use>
               </svg>
             </a>
           </li>
-          <li>
-            <a href="#">Видео про велосипеды
+          <li class="menu__item">
+            <a href="#block-promo">Видео про велосипеды
               <svg width="8" height="12" fill="none">
                 <use xlink:href="./img/icon/sprite_auto.svg#icon-arrow"></use>
               </svg>
             </a>
           </li>
-          <li>
-            <a href="#">Контакты
+          <li class="menu__item">
+            <a href="#block-contacts">Контакты
               <svg width="8" height="12" fill="none">
                 <use xlink:href="./img/icon/sprite_auto.svg#icon-arrow"></use>
               </svg>
@@ -93,7 +93,7 @@
       </div>
     </section>
 
-    <section class="facts">
+    <section class="facts" id="block-about">
       <div class="container">
         <h2>Несколько фактов о нас</h2>
         <ul class="facts__list">
@@ -105,7 +105,7 @@
       </div>
     </section>
 
-    <section class="types">
+    <section class="types" id="block-types">
       <div class="types__container container">
         <h2>Виды велосипедов</h2>
         <ul class="types__list">
@@ -129,7 +129,7 @@
             </a>
           </li>
           <li class="types__item">
-            <a class="types__card types__card--top-margin" href="#">
+            <a class="types__card" href="#">
               <h3>Горный велосипед</h3>
               <div class="types__card-picture">
                 <picture>
@@ -170,7 +170,7 @@
       </div>
     </section>
 
-    <section class="promo-video">
+    <section class="promo-video" id="block-promo">
       <div class="promo-video__container container">
         <h2>Видео про велосипеды</h2>
         <p>В этом видео мы подробно расскажем про особенности выбора велосипеда для себя.</p>
@@ -205,7 +205,7 @@
       </div>
     </section>
   </main>
-  <footer class="page__footer footer">
+  <footer class="page__footer footer" id="block-contacts">
     <div class="container">
       <div class="contacts">
         <h2>Как нас найти?</h2>
@@ -247,6 +247,6 @@
       </div>
     </div>
   </footer>
-  <script src="./js/script.js"></script>
+  <script src="./js/main.js"></script>
 </body>
 </html>

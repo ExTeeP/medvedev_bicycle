@@ -79,3 +79,21 @@ document.documentElement.classList.remove('nojs');
     menuToggleHandlers();
   });
 })();
+
+// Плавная прокрутка по якорям
+(function () {
+  var pageAnchors = document.querySelectorAll('a[href^="#block-"]');
+
+  pageAnchors.forEach(function (link) {
+
+    link.addEventListener('click', function (evt) {
+      evt.preventDefault();
+
+      var blockID = link.getAttribute('href');
+      document.querySelector(blockID).scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      });
+    });
+  });
+})();
