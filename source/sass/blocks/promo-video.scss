@@ -1,0 +1,135 @@
+.promo-video {
+  margin-bottom: 248px;
+  padding-top: 120px;
+  background-color: $color-black;
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 154px;
+    padding-top: 70px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 119px;
+    padding-top: 84px;
+  }
+}
+
+.promo-video__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+
+.promo-video h2 {
+  margin: 0;
+  margin-bottom: 20px;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 30px;
+  color: $color-white;
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 20px;
+    font-size: 24px;
+  }
+}
+
+.promo-video p {
+  margin: 0;
+  margin-bottom: 56px;
+  max-width: 400px;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 28px;
+  color: $color-white-a70;
+
+  @media (max-width: $tablet-width) {
+    max-width: 450px;
+    margin-bottom: 40px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 52px;
+  }
+}
+
+.promo-video__player {
+  position: relative;
+  margin-bottom: -98px;
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: -85px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: -49px;
+  }
+}
+
+.promo-video__play-button {
+  margin: auto;
+  padding: 0;
+  position: absolute;
+  width: 65px;
+  height: 65px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border: none;
+  color: $color-accent;
+  background-color: transparent;
+  cursor: pointer;
+
+
+  &:focus,
+  &:hover {
+    transition: color 0.2s ease-out;
+    color: $color-accent-hover;
+  }
+
+  &:active {
+    transition: opacity 0.2s ease-out;
+    opacity: 0.8;
+  }
+
+  @media (max-width: $tablet-width) {
+    width: 90px;
+    height: 90px;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 65px;
+    height: 65px;
+  }
+}
+
+.promo-video__play-button svg {
+  width: inherit;
+  height: inherit;
+
+  @media (max-width: $tablet-width) {
+    width: inherit;
+    height: inherit;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: inherit;
+    height: inherit;
+  }
+}
+
+.promo-video__poster {
+
+  @media (max-width: $tablet-width) {
+    margin-right: 62.5px;
+    margin-left: 62.5px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin: 0;
+    max-width: 440px;
+  }
+}

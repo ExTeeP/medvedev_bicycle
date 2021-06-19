@@ -29,7 +29,7 @@
       </div>
 
       <nav class="header__nav menu">
-        <ul>
+        <ul class="menu__list">
           <li>
             <a href="#">О нас
               <svg width="8" height="12" fill="none">
@@ -92,11 +92,162 @@
         </div>
       </div>
     </section>
+
+    <section class="facts">
+      <div class="container">
+        <h2>Несколько фактов о нас</h2>
+        <ul class="facts__list">
+          <li>Самый широкий выбор велосипедов!</li>
+          <li>Доставка велосипедов по&nbsp;всей России!</li>
+          <li>Большой выбор крутых аксессуаров!</li>
+          <li>Профессиональные консультации!</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="types">
+      <div class="types__container container">
+        <h2>Виды велосипедов</h2>
+        <ul class="types__list">
+          <li>
+            <h3>Дорожный велосипед</h3>
+            <picture>
+              <source media="(max-width: 767.8px)" type="image/webP"
+                srcset="./img/card-bicycle-mobile-01@1x.webp 1x, ./img/card-bicycle-mobile-01@2x.webp 2x" />
+              <source media="(max-width: 767.8px)"
+                srcset="./img/card-bicycle-mobile-01@1x.jpg 1x, ./img/card-bicycle-mobile-01@2x.jpg 2x" />
+
+              <source media="(max-width: 1023.8px)" type="image/webP"
+                srcset="./img/card-bicycle-tablet-01@1x.webp 1x, ./img/card-bicycle-tablet-01@2x.webp 2x" />
+              <source media="(max-width: 1023.8px)"
+                srcset="./img/card-bicycle-tablet-01@1x.jpg 1x, ./img/card-bicycle-tablet-01@2x.jpg 2x" />
+
+              <source media="(min-width: 1024px)" type="image/webP"
+                srcset="./img/card-bicycle-desktop-01@1x.webp 1x, ./img/card-bicycle-desktop-01@2x.webp 2x" />
+
+              <!-- 1x: 342 2x: 684 -->
+              <img width="342" height="566" src="./img/card-bicycle-desktop-01@1x.jpg" srcset="./img/card-bicycle-desktop-01@2x.jpg 2x" alt="Дорожный велосипед с корзинкой для продуктов для передвижения по городу" />
+            </picture>
+          </li>
+          <li>
+            <h3>Горный велосипед</h3>
+            <picture>
+              <source media="(max-width: 767.8px)" type="image/webP"
+                srcset="./img/card-bicycle-mobile-02@1x.webp 1x, ./img/card-bicycle-mobile-02@2x.webp 2x" />
+              <source media="(max-width: 767.8px)"
+                srcset="./img/card-bicycle-mobile-02@1x.jpg 1x, ./img/card-bicycle-mobile-02@2x.jpg 2x" />
+
+              <source media="(max-width: 1023.8px)" type="image/webP"
+                srcset="./img/card-bicycle-tablet-02@1x.webp 1x, ./img/card-bicycle-tablet-02@2x.webp 2x" />
+              <source media="(max-width: 1023.8px)"
+                srcset="./img/card-bicycle-tablet-02@1x.jpg 1x, ./img/card-bicycle-tablet-02@2x.jpg 2x" />
+
+              <source media="(min-width: 1024px)" type="image/webP"
+                srcset="./img/card-bicycle-desktop-02@1x.webp 1x, ./img/card-bicycle-desktop-02@2x.webp 2x" />
+
+              <!-- 1x: 342 2x: 684 -->
+              <img width="342" height="566" src="./img/card-bicycle-desktop-02@1x.jpg" srcset="./img/card-bicycle-desktop-02@2x.jpg 2x" alt="Горный велосипед для любителей передвижений по пересеченной местности" /></picture>
+          </li>
+          <li>
+            <h3>Детский велосипед</h3>
+            <picture>
+              <source media="(max-width: 767.8px)" type="image/webP"
+                srcset="./img/card-bicycle-mobile-03@1x.webp 1x, ./img/card-bicycle-mobile-03@2x.webp 2x" />
+              <source media="(max-width: 767.8px)"
+                srcset="./img/card-bicycle-mobile-03@1x.jpg 1x, ./img/card-bicycle-mobile-03@2x.jpg 2x" />
+
+              <source media="(max-width: 1023.8px)" type="image/webP"
+                srcset="./img/card-bicycle-tablet-03@1x.webp 1x, ./img/card-bicycle-tablet-03@2x.webp 2x" />
+              <source media="(max-width: 1023.8px)"
+                srcset="./img/card-bicycle-tablet-03@1x.jpg 1x, ./img/card-bicycle-tablet-03@2x.jpg 2x" />
+
+              <source media="(min-width: 1024px)" type="image/webP"
+                srcset="./img/card-bicycle-desktop-03@1x.webp 1x, ./img/card-bicycle-desktop-03@2x.webp 2x" />
+
+              <!-- 1x: 342 2x: 684 -->
+              <img width="342" height="566" src="./img/card-bicycle-desktop-03@1x.jpg" srcset="./img/card-bicycle-desktop-03@2x.jpg 2x" alt="Детский велосипед для для вашего ребенка" /></picture>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="promo-video">
+      <div class="promo-video__container container">
+        <h2>Видео про велосипеды</h2>
+        <p>В этом видео мы подробно расскажем про особенности выбора велосипеда для себя.</p>
+
+        <div class="promo-video__player">
+
+          <button class="promo-video__play-button" type="button">
+            <svg width="65" height="65" viewBox="0 0 65 65" fill="none">
+              <use xlink:href="./img/icon/sprite_auto.svg#icon-play-button"></use>
+            </svg>
+          </button>
+          <div class="promo-video__poster">
+            <picture>
+              <source media="(max-width: 767.8px)" type="image/webP"
+                srcset="./img/promo-poster-mobile@1x.webp 1x, ./img/promo-poster-mobile@2x.webp 2x" />
+              <source media="(max-width: 767.8px)"
+                srcset="./img/promo-poster-mobile@1x.jpg 1x, ./img/promo-poster-mobile@2x.jpg 2x" />
+
+              <source media="(max-width: 1023.8px)" type="image/webP"
+                srcset="./img/promo-poster-tablet@1x.webp 1x, ./img/promo-poster-tablet@2x.webp 2x" />
+              <source media="(max-width: 1023.8px)"
+                srcset="./img/promo-poster-tablet@1x.jpg 1x, ./img/promo-poster-tablet@2x.jpg 2x" />
+
+              <source media="(min-width: 1024px)" type="image/webP"
+                srcset="./img/promo-poster-desktop@1x.webp 1x, ./img/promo-poster-desktop@2x.webp 2x" />
+
+              <!-- 1x: 929 2x: 1858 -->
+              <img width="929" height="522" src="./img/promo-poster-desktop@1x.jpg" srcset="./img/promo-poster-desktop@2x.jpg 2x" alt="Превью кадр из видео о велосипедах" />
+            </picture>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
   <footer class="page__footer footer">
+    <div class="container">
+      <div class="contacts">
+        <h2>Как нас найти?</h2>
+        <p>Мы находимся по адресу: Санкт&nbsp;-Петербург, ул. Большая Конюшенная, д. 19</p>
+        <div class="contacts__map">
+          <picture>
+            <source media="(max-width: 767.8px)" type="image/webP"
+              srcset="./img/backround-map-mobile@1x.webp 1x, ./img/backround-map-mobile@2x.webp 2x" />
+            <source media="(max-width: 767.8px)"
+              srcset="./img/backround-map-mobile@1x.png 1x, ./img/backround-map-mobile@2x.png 2x" />
 
+            <source media="(max-width: 1023.8px)" type="image/webP"
+              srcset="./img/backround-map-tablet@1x.webp 1x, ./img/backround-map-tablet@2x.webp 2x" />
+            <source media="(max-width: 1023.8px)"
+              srcset="./img/backround-map-tablet@1x.png 1x, ./img/backround-map-tablet@2x.png 2x" />
+
+            <source media="(min-width: 1024px)" type="image/webP"
+              srcset="./img/backround-map-desktop@1x.webp 1x, ./img/backround-map-desktop@2x.webp 2x" />
+
+            <!-- 1x: 957 2x: 1914 -->
+            <img width="957" height="530" src="./img/backround-map-desktop@1x.png" srcset="./img/backround-map-desktop@2x.png 2x" alt="Офис компании г. Санкт-Петербург, ул. Большая Конюшенная, д. 19" />
+          </picture>
+        </div>
+
+        <div class="contacts__links">
+          <a href="mailto:puteshestviemechta@gmail.ru">
+            <svg width="26" height="20" fill="none">
+              <use xlink:href="./img/icon/sprite_auto.svg#icon-mail"></use>
+            </svg>
+            <span>puteshestviemechta@gmail.ru</span>
+          </a>
+          <a href="tel:+749978468446">
+            <svg width="22" height="24" fill="none">
+              <use xlink:href="./img/icon/sprite_auto.svg#icon-phone"></use>
+            </svg>
+            <span>+7 (499) -784-684-46</span>
+          </a>
+        </div>
+      </div>
+    </div>
   </footer>
-
-  <script src="./js/script.js"></script>
+  <!-- <script src="./js/script.js"></script> -->
 </body>
 </html>
