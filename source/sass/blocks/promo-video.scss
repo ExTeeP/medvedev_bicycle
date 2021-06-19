@@ -124,8 +124,7 @@
 .promo-video__poster {
 
   @media (max-width: $tablet-width) {
-    margin-right: 62.5px;
-    margin-left: 62.5px;
+    margin: 0 97.5px;
   }
 
   @media (max-width: $mobile-width) {

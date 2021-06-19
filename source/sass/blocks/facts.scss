@@ -1,5 +1,13 @@
 .facts {
-  margin-bottom: 150px;
+  margin-bottom: 109px;
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 27px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 39px;
+  }
 }
 
 .facts h2 {
@@ -27,8 +35,7 @@
   list-style: none;
 
   @media (max-width: $tablet-width) {
-    padding-right: 60px;
-    padding-left: 60px;
+    padding: 0 55px;
   }
 
   @media (max-width: $mobile-width) {
@@ -61,9 +68,8 @@
   }
 
   @media (max-width: $tablet-width) {
-    max-width: 260px;
-    padding-right: 5px;
-    padding-left: 5px;
+    max-width: 270px;
+    padding: 0;
   }
 
   @media (max-width: $mobile-width) {

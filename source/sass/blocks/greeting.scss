@@ -147,6 +147,7 @@
     line-height: 42px;
   }
 }
+
 .greeting p {
   margin: 0;
   font-weight: 300;
@@ -155,6 +156,9 @@
 
   @media (max-width: $tablet-width) {
     font-size: 18px;
-    opacity: 0.8;
   }
+}
+
+.greeting__content p {
+  opacity: 0.8;
 }
