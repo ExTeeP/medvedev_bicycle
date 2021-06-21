@@ -97,3 +97,47 @@ document.documentElement.classList.remove('nojs');
     });
   });
 })();
+
+// Маска ввода телефона
+(function () {
+  var inputTel = document.querySelector('input[type="tel"]');
+
+  if (inputTel) {
+    var onKeyPress = function (evt) {
+      if (evt.keyCode < 48 || evt.keyCode > 57) {
+        evt.preventDefault();
+      }
+    };
+
+    var onKeyDown = function (evt) {
+      if (evt.key === 'Backspace' && inputTel.value.length <= 2) {
+        evt.preventDefault();
+      }
+    };
+
+    var onFocus = function () {
+      if (inputTel.value.length === 0) {
+        inputTel.value = '+7';
+        inputTel.selectionStart = inputTel.value.length;
+      }
+    };
+
+    var onBlur = function () {
+      if (inputTel.value === '+7') {
+        inputTel.value = '';
+      }
+    };
+
+    var onClick = function () {
+      if (inputTel.selectionStart < 2) {
+        inputTel.selectionStart = inputTel.value.length;
+      }
+    };
+
+    inputTel.addEventListener('keypress', onKeyPress);
+    inputTel.addEventListener('keydown', onKeyDown);
+    inputTel.addEventListener('focus', onFocus);
+    inputTel.addEventListener('blur', onBlur);
+    inputTel.addEventListener('click', onClick);
+  }
+})();
