@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="Широкий выбор велосипедов и комплектующих. Доставка по всей России.">
   <title>Стартовый шаблон</title>
   <link rel="preload" href="./fonts/OpenSans-Light.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <link rel="preload" href="./fonts/OpenSans-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
@@ -197,7 +198,7 @@
     <div class="container">
       <div class="contacts">
         <h2>Как нас найти?</h2>
-        <p>Мы находимся по адресу: Санкт&nbsp;-Петербург, ул. Большая Конюшенная, д. 19</p>
+        <p>Мы находимся по адресу: <br> Санкт-Петербург, ул. Большая Конюшенная, д. 19</p>
         <div class="contacts__map">
           <picture>
             <source media="(max-width: 767.8px)" type="image/webP" srcset="./img/backround-map-mobile@1x.webp 1x, ./img/backround-map-mobile@2x.webp 2x">
@@ -213,20 +214,24 @@
           </picture>
         </div>
 
-        <div class="contacts__links">
-          <a href="mailto:puteshestviemechta@gmail.ru">
-            <svg width="26" height="20" fill="none" aria-hidden="true">
-              <use xlink:href="./img/icon/sprite_auto.svg#icon-mail"></use>
-            </svg>
-            <span>puteshestviemechta@gmail.ru</span>
-          </a>
-          <a href="tel:+749978468446">
-            <svg width="22" height="24" fill="none" aria-hidden="true">
-              <use xlink:href="./img/icon/sprite_auto.svg#icon-phone"></use>
-            </svg>
-            <span>+7 (499) -784-684-46</span>
-          </a>
-        </div>
+        <ul class="contacts__links">
+          <li class="contacts__links-item">
+            <a href="mailto:puteshestviemechta@gmail.ru">
+              <svg width="26" height="20" fill="none" aria-hidden="true">
+                <use xlink:href="./img/icon/sprite_auto.svg#icon-mail"></use>
+              </svg>
+              <span>puteshestviemechta@gmail.ru</span>
+            </a>
+          </li>
+          <li class="contacts__links-item">
+            <a href="tel:+749978468446">
+              <svg width="22" height="24" fill="none" aria-hidden="true">
+                <use xlink:href="./img/icon/sprite_auto.svg#icon-phone"></use>
+              </svg>
+              <span>+7 (499) -784-684-46</span>
+            </a>
+          </li>
+        </ul>
       </div>
     </div>
   </footer>
