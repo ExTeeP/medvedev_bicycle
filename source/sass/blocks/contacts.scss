@@ -96,14 +96,8 @@
   @media (max-width: $mobile-width) {
     margin: 0 auto;
     margin-bottom: 20px;
+    padding: 0 10px;
     width: auto;
-  }
-}
-
-.contacts__links-item:not(:nth-of-type(2n-2)) {
-  @media (max-width: $tablet-width) {
-  }
-  @media (max-width: $mobile-width) {
   }
 }
 
@@ -113,7 +107,7 @@
   }
 
   @media (max-width: $mobile-width) {
-    padding-left: 0;
+    padding-left: 10px;
   }
 }
 
